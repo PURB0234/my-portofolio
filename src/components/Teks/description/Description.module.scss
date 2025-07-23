@@ -1,0 +1,13 @@
+.DescriptionContainer {
+    margin-top: 50;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    .DescriptionContainerTeks {
+        width: 35%;
+        text-align: center;
+        p {
+            color: white;
+        }
+    }
+}

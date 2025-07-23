@@ -1,0 +1,17 @@
+.TeksContainer {
+    margin-top: 10;
+    text-align: center;
+    h1 {
+        color: white;
+        font-size: 30;
+        font-weight: bold;
+    }
+    .TeksContainerRow {
+        display: flex;
+        flex-direction: row;
+    }
+    .Teks {
+        margin-left: 10;
+        color: blue;
+    }
+}

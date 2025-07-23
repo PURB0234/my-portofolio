@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 15;
+  .containerHeaderFooter {
+    width: 50%;
+    margin-bottom: 30;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      color: white;
+      h2 {
+        color: gray;
+      }
+    }
+    .footer {
+      text-align: justify;
+      color: gray;
+    }
+  }
+}
