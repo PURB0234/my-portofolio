@@ -1,17 +1,17 @@
 export const Ex = [
     {
-        title: "Lead Software Engineer at Google",
-        description: "As a Senior Software Engineer at Google, I played a pivotal role in developing innovative solutions for Google's core search algorithms. Collaborating with a dynamic team of engineers, I contributed to the enhancement of search accuracy and efficiency, optimizing user experiences for millions of users worldwide.",
-        at: "Nov 2019-Present"
+        title: "Campus Organizational Experience",
+        description: "Saya memperoleh kesempatan untuk terlibat dalam kegiatan organisasi di lingkungan kampus. Pengalaman ini menjadi bagian dari proses belajar saya dalam memahami kerja sama, komunikasi, dan tanggung jawab dalam sebuah kegiatan.",
+        at: "Sept 2026-Present"
     },
     {
-        title: "Junior Software Engineer at Apple",
-        description: "During my tenure at Apple, I held the role of Software Architect, where I played a key role in shaping the architecture of mission-critical software projects. Responsible for designing scalable and efficient systems, I provided technical leadership to a cross-functional team.",
-        at: "Nov 2019-Present"
+        title: "Individual Project Experience",
+        description: "Saya mengerjakan proyek secara mandiri sebagai sarana menerapkan materi yang telah dipelajari. Melalui proses ini, saya belajar menyusun kebutuhan proyek, mengembangkan fitur, dan mencari solusi ketika menghadapi kendala teknis.",
+        at: "Sept 2026-Present"
     },
     {
-        title: "Software Engineer at Meta",
-        description: "At Meta, I served as a  Software Engineer, focusing on the design and implementation of backend systems for the social media giant's dynamic platform. Working on projects that involved large-scale data processing and user engagement features, I leveraged my expertise to ensure seamless functionality and scalability.",
-        at: "Nov 2019-Present"
+        title: "Collaborative Project Experience",
+        description: "Saya juga memperoleh pengalaman mengerjakan proyek bersama orang lain. Proses ini membantu saya belajar berdiskusi, memahami pembagian tugas, serta menyelaraskan pekerjaan untuk mencapai tujuan proyek bersama.",
+        at: "Sept 2026-Present"
     },
 ]

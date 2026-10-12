@@ -1,6 +1,89 @@
-.avatar {
-    background-color: greenyellow;
-    width: 200;
-    height: 200;
-    border-radius: 100%;
+.container {
+    // background-color: rgb(39, 134, 33);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+
+    .card {
+        position: relative;
+        height: 16rem;
+        width: 20rem;
+        transform-style: preserve-3d;
+
+        .cardGlow {
+            position: absolute;
+            inset: -2rem;
+            border-radius: 50%;
+            background-color: rgba(37, 99, 235, 0.3);
+            filter: blur(64px);
+        }
+
+        .cardLayer {
+            position: absolute;
+            inset: 0;
+            border-radius: 1.5rem;
+            border: 1px solid rgba(96, 165, 250, 0.3);
+            background-color: rgba(30, 58, 138, 0.2);
+        }
+
+        .cardFirst {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            border-radius: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background-color: #0f172a;
+            box-shadow: 0 25px 50px -12px rgba(23, 37, 84, 0.5);
+            transform-style: preserve-3d;
+
+            .bottomGradient {
+                position: absolute;
+                inset: 0;
+                background-image: linear-gradient(to top, #020617 0%, transparent 50%, transparent 100%);
+            }
+
+            .informationProfile {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                padding: 5;
+
+                .major {
+                    font-size: 0.875rem;
+                    line-height: 1.25rem;
+                    color: #67e8f9;
+                }
+
+                .name {
+                    margin-top: 1;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    color: #fff;
+                }
+
+                .desc {
+                    font-size: 0.875rem;
+                    line-height: 1.25rem;
+                    color: #cbd5e1;
+                }
+            }
+        }
+
+        .badge {
+            position: absolute;
+            top: 2.5rem;
+            right: -2rem;
+            border-radius: 0.75rem;
+            border: 1px solid rgba(103, 232, 249, 0.3);
+            background-color: rgba(15, 23, 42, 0.9);
+            padding: 0.5rem 0.75rem;
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+            color: #a5f3fc;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+            white-space: nowrap;
+        }
+    }
 }

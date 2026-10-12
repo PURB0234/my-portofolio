@@ -3,11 +3,11 @@ import styles from "./Teks.module.scss";
 export default function Teks() {
     return (
         <div className={styles.TeksContainer}>
-            <h1>I cant craete the</h1>
+            <h1>Hello I'm</h1>
 
             <div className={styles.TeksContainerRow}>
-            <h1>project with all</h1>
-            <h1 className={styles.Teks}>Tecnologyes</h1>
+                {/* <h1>Purbo Jatmiko</h1> */}
+                <h1 className={styles.Teks}>Purbo Jatmiko</h1>
             </div>
         </div>
     )

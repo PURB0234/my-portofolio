@@ -5,7 +5,7 @@ import styles from "./ProjectList.module.scss";
 export default function ProjectList() {
     return (
         <section id="projects" className={styles.container}>
-            <h2>PROJECT</h2>
+            <h2>PROJECTS</h2>
             <div className={styles.grid}>
                 {projects.map((project, index) => (
                     <ProjectCard key={index} {...project} />

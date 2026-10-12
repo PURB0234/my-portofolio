@@ -7,7 +7,7 @@ export const projects = [
   {
     title: "React Native App To-do List",
     description: "Aplikasi mobile untuk manajemen tugas menggunakan mamang react.",
-    link: "https://github.com/username/flutter-app"
+    link: "https://github.com/PURB0234/Aplikasi_TodoList.git"
   },
   {
     title: "API Service",

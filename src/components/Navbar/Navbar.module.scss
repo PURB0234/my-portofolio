@@ -1,45 +1,69 @@
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-//   background-color: #222222;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: fixed;
-  transform: translateX(-50%);
-  width: max-content;
+  top: 1.5rem;
   left: 50%;
-  border-bottom-left-radius: 10;
-  border-bottom-right-radius: 10;
-  box-shadow: 0 4px 20px rgba(115, 0, 255, 0.3);
-  // animation: fadeIn 1s ease-out;
-}
+  transform: translateX(-50%);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  padding: 0.35rem 0.5rem;
+  background: rgba(10, 14, 23, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 9999px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45), 0 0 20px rgba(0, 200, 255, 0.12);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 
-// @keyframes fadeIn {
-//   from {
-//     opacity: 0;
-//     transform: translateY(-20px);
-//   }
-//   to {
-//     opacity: 1;
-//     transform: translateY(0);
-//   }
-// }
+  &:hover {
+    border-color: rgba(0, 200, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45), 0 0 30px rgba(0, 200, 255, 0.22);
+  }
+}
 
 .menu {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  align-items: center;
+  gap: 0.25rem;
+  margin: 0;
+  padding: 0;
 
-  li a {
-    color: white;
-    transform: 'rotate(var(--rotate))';
-    &:hover {
-      color: aqua;
-    }
+  li {
+    position: relative;
+    display: inline-flex;
   }
 }
 
-.logo {
-  color: white;
+.link {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.5rem 1.1rem;
+  border-radius: 9999px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.25s ease;
+
+  &:hover {
+    color: #ffffff;
+  }
+
+  &.active {
+    color: #ffffff;
+    font-weight: 600;
+  }
+}
+
+.activePill {
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: rgba(0, 200, 255, 0.18);
+  border: 1px solid rgba(0, 200, 255, 0.45);
+  box-shadow: 0 0 16px rgba(0, 200, 255, 0.3);
+  z-index: 1;
 }

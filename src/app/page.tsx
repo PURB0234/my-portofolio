@@ -1,6 +1,6 @@
 import Avatars from "@/components/Avatars/Avatars";
-import ButtonCV from "@/components/button/downloadcv/Button";
-import Button from "@/components/button/getintouch/Button";
+// import ButtonCV from "@/components/button/downloadcv/Button";
+// import Button from "@/components/button/getintouch/Button";
 import Navbar from "@/components/Navbar/Navbar";
 import Laravel from "@/components/Skills/Laravel/Laravel";
 import NextJS from "@/components/Skills/NextJS/NextJS";
@@ -11,7 +11,9 @@ import FlutterR from "@/components/Skills/FlutterR/FlutterR";
 import Github from "@/components/Skills/GithubB/Github";
 import ProjectList from "@/components/ProjectList/ProjectList";
 import Experience from "@/components/ExperienceList/Experience";
-import Cntk from "@/components/Contact/cntk";
+import Contact from "@/components/Contact/Contact";
+import About_me from "@/components/About_me/About_me";
+import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -22,38 +24,44 @@ export default function Home() {
         <div className="w-full flex flex-row mt-4 justify-center">
           <Avatars />
         </div>
-        <div className="justify-center w-full flex h-20">
+        {/* <div className="justify-center w-full flex h-20">
           <Teks />
-        </div>
-        <Description />
-        <div className="flex flex-row justify-center space-x-7 mt-7">
+        </div> */}
+        {/* <Description /> */}
+        {/* <div className="flex flex-row justify-center space-x-7 mt-7">
           <Button/>
           <ButtonCV/>
-        </div>
+        </div> */}
         <div className="flex justify-center mt-5">
-        <h2 className="text-white">EXPERIENCE WITH</h2>
+          {/* <h2 className="text-white">EXPERIENCE WITH</h2> */}
+          <h2 className="text-white">STACK</h2>
         </div>
         <div className="flex flex-row justify-center">
-          <NextJS/>
-          <Laravel/>
-          <React/>
-          <FlutterR/>
-          <Github/>
+          <NextJS />
+          <Laravel />
+          <React />
+          <FlutterR />
+          <Github />
         </div>
       </section>
 
+      <section id="about_me" className="h-full flex items-center justify-center">
+        {/* <h1 className="text-4xl font-bold">Contact Section</h1> */}
+        <About_me />
+      </section>
       <section id="projects" className="h-full flex items-center justify-center">
         {/* <h1 className="text-4xl font-bold">Projects Section</h1> */}
-        <ProjectList/>
+        <ProjectList />
       </section>
       <section id="experience" className="h-full flex items-center justify-center">
         {/* <h1 className="text-4xl font-bold">Experience Section</h1> */}
-        <Experience/>
+        <Experience />
       </section>
       <section id="contact" className="h-full flex items-center justify-center">
         {/* <h1 className="text-4xl font-bold">Contact Section</h1> */}
-        <Cntk/>
+        <Contact />
       </section>
+      <Footer />
     </>
   );
 }
