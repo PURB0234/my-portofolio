@@ -24,7 +24,7 @@ export const projects: Project[] = [
   {
     title: "React Native App To-do List",
     description:
-      "Aplikasi mobile untuk manajemen tugas menggunakan mamang react.",
+      "Aplikasi mobile untuk manajemen tugas menggunakan react native.",
     link: "https://github.com/PURB0234/Aplikasi_TodoList.git",
     tech: ["React Native", "JavaScript"],
   },
