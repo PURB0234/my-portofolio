@@ -1,17 +1,26 @@
 export const Ex = [
     {
+        id: "campus-organization",
         title: "Campus Organizational Experience",
-        description: "Saya memperoleh kesempatan untuk terlibat dalam kegiatan organisasi di lingkungan kampus. Pengalaman ini menjadi bagian dari proses belajar saya dalam memahami kerja sama, komunikasi, dan tanggung jawab dalam sebuah kegiatan.",
-        at: "Sept 2026-Present"
+        category: "Organization",
+        period: "2026 — Present",
+        description:
+            "Terlibat dalam kegiatan organisasi di lingkungan kampus. Pengalaman ini menjadi kesempatan untuk belajar mengenai koordinasi, komunikasi, dan tanggung jawab dalam kegiatan bersama.",
     },
     {
-        title: "Individual Project Experience",
-        description: "Saya mengerjakan proyek secara mandiri sebagai sarana menerapkan materi yang telah dipelajari. Melalui proses ini, saya belajar menyusun kebutuhan proyek, mengembangkan fitur, dan mencari solusi ketika menghadapi kendala teknis.",
-        at: "Sept 2026-Present"
+        id: "individual-projects",
+        title: "Individual Projects",
+        category: "Personal Projects",
+        period: "2026 — Present",
+        description:
+            "Mengembangkan proyek secara mandiri untuk menerapkan materi yang dipelajari, mulai dari menyusun kebutuhan, membangun fitur, hingga menangani kendala teknis.",
     },
     {
-        title: "Collaborative Project Experience",
-        description: "Saya juga memperoleh pengalaman mengerjakan proyek bersama orang lain. Proses ini membantu saya belajar berdiskusi, memahami pembagian tugas, serta menyelaraskan pekerjaan untuk mencapai tujuan proyek bersama.",
-        at: "Sept 2026-Present"
+        id: "collaborative-projects",
+        title: "Collaborative Projects",
+        category: "Academic Projects",
+        period: "2026 — Present",
+        description:
+            "Berkolaborasi dalam proyek untuk melatih pembagian tugas, komunikasi, dan integrasi pekerjaan. Fokus pada kontribusi yang dapat diberikan serta proses penyelesaian proyek bersama.",
     },
-]
+];

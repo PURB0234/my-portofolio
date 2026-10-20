@@ -1,0 +1,13 @@
+.background {
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .Icon {
+        padding: 10;
+        color: #ea4c89;
+    }
+}

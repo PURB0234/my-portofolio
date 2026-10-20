@@ -73,7 +73,7 @@ export default function Navbar() {
                     transition={{ type: "spring", stiffness: 380, damping: 30 }}
                   />
                 )}
-                <span style={{ position: "relative", zIndex: 2 }}>
+                <span className={styles.linkLabel}>
                   {item.name}
                 </span>
               </a>

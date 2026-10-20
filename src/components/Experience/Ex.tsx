@@ -3,26 +3,32 @@ import styles from "./Ex.module.scss";
 type ExType = {
     title: string;
     description: string;
-    at: string;
-}
+    period: string;
+    category: string;
+};
 
-export default function Exam({ title, description, at }: ExType) {
+export default function Exam({
+    title,
+    description,
+    period,
+    category,
+}: ExType) {
     return (
-        <div className={styles.container}>
-            <div className={styles.containerHeaderFooter}>
-                <div className={styles.header}>
-                    <div className="flex flex-row">
-                        {/* logo disini */}
-                        <h1>{title}</h1>
-                    </div>
-                    <h2>{at}</h2>
-                </div>
-
-                <div className={styles.footer}>
-                    <p>{description}</p>
-                </div>
-
+        <article className={styles.experience}>
+            <div className={styles.marker} aria-hidden="true">
+                <span />
             </div>
-        </div>
-    )
+
+            <div className={styles.content}>
+                <div className={styles.meta}>
+                    <span className={styles.category}>{category}</span>
+                    <span className={styles.period}>{period}</span>
+                </div>
+
+                <h3 className={styles.title}>{title}</h3>
+
+                <p className={styles.description}>{description}</p>
+            </div>
+        </article>
+    );
 }

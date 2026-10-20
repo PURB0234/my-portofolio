@@ -22,7 +22,8 @@
 .card {
     position: relative;
     z-index: 1;
-    background: rgba(15, 23, 42, 0.7);
+    // background: rgba(15, 23, 42, 0.7);
+    background-color: var(--color-surface, #111215);
     backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 1.5rem;

@@ -19,11 +19,42 @@
   }
 } */
 
+:root {
+  --color-bg: #080b09;
+  --color-surface: #101510;
+  --color-surface-raised: #171e17;
+  --color-border: #293229;
+
+  --color-text-primary: #f0f3ef;
+  --color-text-secondary: #a6b0a5;
+  --color-text-muted: #7e8a7d;
+
+  --color-accent: #a3e635;
+}
+
 body {
-  background-color: black;
+  /* background-color: black; */
   font-family: Arial, Helvetica, sans-serif;
   scrollbar-width: none;
   -ms-overflow-style: none;
+
+  min-height: 100vh;
+  margin: 0;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg);
+  background-image:
+    radial-gradient(ellipse at 15% 10%,
+      rgba(91, 140, 50, 0.09) 0%,
+      transparent 42%),
+    radial-gradient(ellipse at 85% 45%,
+      rgba(50, 110, 58, 0.06) 0%,
+      transparent 40%),
+    radial-gradient(ellipse at 50% 100%,
+      rgba(113, 145, 53, 0.045) 0%,
+      transparent 45%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
 }
 
 html {

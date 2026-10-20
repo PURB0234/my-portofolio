@@ -64,7 +64,7 @@ export default function Avatars() {
         >
             <motion.div
                 className={styles.card}
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ scale: 1.02 }}
                 transition={{
                     type: "spring",
                     stiffness: 300,

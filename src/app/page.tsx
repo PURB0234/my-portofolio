@@ -14,6 +14,9 @@ import Experience from "@/components/ExperienceList/Experience";
 import Contact from "@/components/Contact/Contact";
 import About_me from "@/components/About_me/About_me";
 import Footer from "@/components/Footer/Footer";
+import Oracle from "@/components/Skills/Oracle/Oracle";
+import Figma from "@/components/Skills/Figma/Figma";
+import TechStack from "@/components/TechStack/TechStack";
 
 export default function Home() {
   return (
@@ -32,17 +35,7 @@ export default function Home() {
           <Button/>
           <ButtonCV/>
         </div> */}
-        <div className="flex justify-center mt-5">
-          {/* <h2 className="text-white">EXPERIENCE WITH</h2> */}
-          <h2 className="text-white">STACK</h2>
-        </div>
-        <div className="flex flex-row justify-center">
-          <NextJS />
-          <Laravel />
-          <React />
-          <FlutterR />
-          <Github />
-        </div>
+        <TechStack />
       </section>
 
       <section id="about_me" className="h-full flex items-center justify-center">

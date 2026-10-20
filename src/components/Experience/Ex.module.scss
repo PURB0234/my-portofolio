@@ -1,23 +1,103 @@
-.container {
-  width: 100%;
+.experience {
+  position: relative;
+  display: grid;
+  grid-template-columns: 16px minmax(0, 1fr);
+  column-gap: 24px;
+  padding-bottom: 44px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  &:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    bottom: 0;
+    left: 5px;
+    width: 1px;
+    background: var(--color-border, #27313d);
+  }
+}
+
+.marker {
+  position: relative;
+  z-index: 1;
   display: flex;
   justify-content: center;
-  padding-top: 15;
-  .containerHeaderFooter {
-    width: 50%;
-    margin-bottom: 30;
-    .header {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-      color: white;
-      h2 {
-        color: gray;
-      }
-    }
-    .footer {
-      text-align: justify;
-      color: gray;
-    }
+  padding-top: 6px;
+
+  span {
+    width: 11px;
+    height: 11px;
+    border: 2px solid var(--color-accent, #54c7d8);
+    border-radius: 50%;
+    background: var(--color-bg, #080b10);
+  }
+}
+
+.content {
+  min-width: 0;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-bottom: 12px;
+}
+
+.category {
+  color: var(--color-accent, #54c7d8);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.period {
+  color: var(--color-text-muted, #7e8998);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.title {
+  margin: 0;
+  color: var(--color-text-primary, #f0f3f6);
+  font-size: clamp(19px, 2vw, 24px);
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.025em;
+}
+
+.description {
+  max-width: 680px;
+  margin: 12px 0 0;
+  color: var(--color-text-secondary, #a8b2c0);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+@media (max-width: 640px) {
+  .experience {
+    column-gap: 16px;
+    padding-bottom: 34px;
+  }
+
+  .meta {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .title {
+    font-size: 19px;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 1.75;
   }
 }
